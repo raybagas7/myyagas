@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FiGithub, FiTwitter, FiMail, FiLinkedin } from 'react-icons/fi';
+import { RxDiscordLogo } from 'react-icons/rx';
+import ProfileInfoContainer from '../Profile Info Components/ProfileInfoContainer';
 
 const MainOpening = () => {
   const [lineShrink, setLineShrink] = useState(false);
@@ -30,13 +33,7 @@ const MainOpening = () => {
         alt="asd"
       /> */}
       {opening ? (
-        <div className="w-full h-full bg-white/50 flex justify-center items-center backdrop-blur-sm">
-          <img
-            className="rounded-3xl shadow shadow-white animate-default_quantum_bouncing"
-            src="https://pokecard-agas.s3.ap-southeast-1.amazonaws.com/PokeCardMaterial/snoop.jpg"
-            alt="asd"
-          />
-        </div>
+        <ProfileInfoContainer />
       ) : (
         <>
           <div className="absolute h-full w-full flex justify-center items-center">
