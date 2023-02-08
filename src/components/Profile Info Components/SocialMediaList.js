@@ -31,7 +31,7 @@ const SocialMediaList = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300"
+            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow hover:drop-shadow"
             href="https://github.com/raybagas7"
           >
             <FiGithub />
@@ -41,7 +41,7 @@ const SocialMediaList = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white hover:bg-blue-linked rounded-full p-2 transition duration-300"
+            className="hover:text-white hover:bg-blue-linked rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://linkedin.com/in/agas77"
           >
             <FiLinkedin />
@@ -51,7 +51,7 @@ const SocialMediaList = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white hover:bg-blue-twitter rounded-full p-2 transition duration-300"
+            className="hover:text-white hover:bg-blue-twitter rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://twitter.com/myyagas"
           >
             <FiTwitter />
@@ -61,7 +61,7 @@ const SocialMediaList = () => {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-white hover:bg-blue-discord rounded-full p-2 transition duration-300"
+            className="hover:text-white hover:bg-blue-discord rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://dsc.bio/agas"
           >
             <RxDiscordLogo />
@@ -70,7 +70,7 @@ const SocialMediaList = () => {
         <li className="bg-white flex items-center">
           <button
             onClick={showAlert}
-            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300"
+            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow"
           >
             <FiMail />
           </button>

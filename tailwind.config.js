@@ -20,6 +20,10 @@ module.exports = {
       },
       backgroundImage: {
         'main-bg': "url('/public/images/main-bg.png')",
+        'pokecard-bg': "url('/public/images/PokeCard/HomePage.PNG')",
+        'simplenote-bg': "url('/public/images/SimpleNote/simpleNote.PNG')",
+        'dude-bg': "url('/public/images/Dude/DudeLogin.jpg')",
+        'smartwater-bg': "url('/public/images/SmartWater/DebitWater.jpg')",
       },
       height: {
         screen: '100vh',
@@ -35,7 +39,7 @@ module.exports = {
         '9/10': '90%',
         '10/10': '100%',
         720: '720px',
-        594: '594.61px',
+        550: '550px',
         460: '460px',
       },
       width: {

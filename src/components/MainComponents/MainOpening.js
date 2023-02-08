@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import { FiGithub, FiTwitter, FiMail, FiLinkedin } from 'react-icons/fi';
-import { RxDiscordLogo } from 'react-icons/rx';
 import ProfileInfoContainer from '../Profile Info Components/ProfileInfoContainer';
 
 const MainOpening = () => {
@@ -10,9 +8,6 @@ const MainOpening = () => {
   const [opening, setOpening] = useState(false);
 
   const toggleOpen = () => {
-    // const tempPop = circlePop;
-    // const tempShrink = lineShrink;
-    // const tempOpenGate = openGate;
     setCirclePop(true);
     setLineShrink(true);
     setTimeout(() => {
@@ -27,11 +22,6 @@ const MainOpening = () => {
       className={`h-screen relative bg-main-bg bg-cover
     ${opening ? 'p-5' : null}`}
     >
-      {/* <img
-        className="absolute"
-        src="https://pokecard-agas.s3.ap-southeast-1.amazonaws.com/PokeCardMaterial/snoop.jpg"
-        alt="asd"
-      /> */}
       {opening ? (
         <ProfileInfoContainer />
       ) : (
