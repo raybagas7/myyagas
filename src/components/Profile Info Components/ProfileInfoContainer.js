@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectDetailContainer from '../Project Detail Components/ProjectDetailContainer';
 import ProjectInfoContainer from '../Project Info Components/ProjectInfoContainer';
 import ImportantToKnow from './ImportantToKnow';
 import SocialMediaList from './SocialMediaList';
@@ -36,7 +37,9 @@ const ProfileInfoContainer = () => {
         </div>
       </div>
       <div className="bg-white/50 flex-2 rounded-xl p-5">
-        <div className="w-full h-550 bg-white rounded-xl"></div>
+        <div className="w-full h-[500px] bg-white/50 rounded-xl p-3">
+          <ProjectDetailContainer />
+        </div>
       </div>
     </div>
   );
