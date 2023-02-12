@@ -13,8 +13,8 @@ const LifeProject = () => {
         <div className="bg-red-fancy w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center"></div>
         <div className="bg-purple-dark-fancy w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center"></div>
         <div className="mr-[15%]"></div>
-        <div className="w-[15%] h-36 absolute left-0 bg-white/20 backdrop-blur-sm"></div>
-        <div className="w-[15%] h-36 absolute right-0 bg-white/20 backdrop-blur-sm"></div>
+        {/* <div className="w-[15%] h-36 absolute left-0 bg-white/20 backdrop-blur-sm"></div>
+        <div className="w-[15%] h-36 absolute right-0 bg-white/20 backdrop-blur-sm"></div> */}
       </div>
     </div>
   );

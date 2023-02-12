@@ -1,10 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectDetailContainer from '../Project Detail Components/ProjectDetailContainer';
 import ProjectInfoContainer from '../Project Info Components/ProjectInfoContainer';
 import ImportantToKnow from './ImportantToKnow';
 import SocialMediaList from './SocialMediaList';
+import { imageDataPokeCard, imageDataSimpleNote } from '../../utils/imageData';
 
 const ProfileInfoContainer = () => {
+  const [preview, setPreview] = useState(imageDataPokeCard());
+  // const [imageData, setImageData] = useState();
+  // const [initializing, setInitializing] = React.useState(true);
+
+  // useEffect(() => {
+  //   setImageData(imageDataPokeCard());
+  //   setInitializing(false);
+  // }, []);
+
+  const changePreview = (newPreview) => {
+    setPreview(newPreview);
+  };
+
+  // if (initializing) {
+  //   return null;
+  // }
+
   return (
     <div className="w-full h-full bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5">
       <div className="shrink-0 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5">
@@ -32,13 +50,16 @@ const ProfileInfoContainer = () => {
         </p>
         <div className="h-full flex flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl">
           <div className="p-3 flex-1">
-            <ProjectInfoContainer />
+            <ProjectInfoContainer changePreview={changePreview} />
           </div>
         </div>
       </div>
       <div className="bg-white/50 flex-2 rounded-xl p-5">
-        <div className="w-full h-[500px] bg-white/50 rounded-xl p-3">
-          <ProjectDetailContainer />
+        <div
+          key={preview[0].id}
+          className="w-full h-[500px] bg-white/50 rounded-xl p-3"
+        >
+          <ProjectDetailContainer preview={preview} />
         </div>
       </div>
     </div>

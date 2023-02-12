@@ -113,6 +113,10 @@ module.exports = {
           '30%': { opacity: '100%', transform: 'scale(1.3)' },
           '100%': { opacity: '100%', transform: 'scale(1)' },
         },
+        brightness_bright: {
+          '0%': { filter: 'brightness(50%)' },
+          '100%': { filter: 'brightness(100%)' },
+        },
       },
       animation: {
         glass_opacity: 'glass_opacity 1s forwards',
@@ -121,6 +125,7 @@ module.exports = {
         bigger_bouncing: 'bigger_bouncing 0.5s forwards',
         fade_out_quantum_bouncing: 'fade_out_quantum_bouncing 1s forwards',
         default_quantum_bouncing: 'default_quantum_bouncing 0.5s forwards',
+        brightness_bright: 'brightness_bright 0.5s forwards',
       },
     },
   },

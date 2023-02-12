@@ -3,10 +3,10 @@ import AndroidProject from './AndroidProject';
 import LifeProject from './LifeProject';
 import Websiteproject from './Websiteproject';
 
-const ProjectInfoContainer = () => {
+const ProjectInfoContainer = ({ changePreview }) => {
   return (
     <div className="bg-white rounded-xl flex gap-5 flex-col p-1">
-      <Websiteproject />
+      <Websiteproject changePreview={changePreview} />
       <AndroidProject />
       <LifeProject />
     </div>
