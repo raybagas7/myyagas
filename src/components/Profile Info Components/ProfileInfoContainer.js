@@ -3,7 +3,8 @@ import ProjectDetailContainer from '../Project Detail Components/ProjectDetailCo
 import ProjectInfoContainer from '../Project Info Components/ProjectInfoContainer';
 import ImportantToKnow from './ImportantToKnow';
 import SocialMediaList from './SocialMediaList';
-import { imageDataPokeCard, imageDataSimpleNote } from '../../utils/imageData';
+import { imageDataPokeCard } from '../../utils/imageData';
+import ProjectDetailDescriptionContainer from '../Project Detail Description Components/ProjectDetailDescriptionContainer';
 
 const ProfileInfoContainer = () => {
   const [preview, setPreview] = useState(imageDataPokeCard());
@@ -54,12 +55,15 @@ const ProfileInfoContainer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white/50 flex-2 rounded-xl p-5">
+      <div className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5">
         <div
           key={preview[0].id}
           className="w-full h-[500px] bg-white/50 rounded-xl p-3"
         >
           <ProjectDetailContainer preview={preview} />
+        </div>
+        <div className="bg-white/50 flex-1 rounded-xl p-3">
+          <ProjectDetailDescriptionContainer />
         </div>
       </div>
     </div>

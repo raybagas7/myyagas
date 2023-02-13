@@ -5,15 +5,15 @@ import MainImagePD from './MainImagePD';
 
 const ProjectDetailContainer = ({ preview }) => {
   const urlPool = preview;
-  const [mainImageUrl, setMainImageUrl] = useState(urlPool[0]);
+  const [mainImgData, setMainImageData] = useState(urlPool[0]);
 
   const changeMainImage = (newPosition) => {
-    setMainImageUrl(urlPool[newPosition]);
+    setMainImageData(urlPool[newPosition]);
   };
 
   return (
     <div className="w-full flex gap-2 h-full">
-      <MainImagePD url={mainImageUrl} />
+      <MainImagePD mainImgData={mainImgData} />
       <div className="bg-white flex-1 rounded-xl flex-wrap flex-col flex justify-center items-center">
         <h2 className="text-xl p-2 bg-purple-dark-fancy drop-shadow-md text-white rounded-xl ">
           Preview
@@ -24,6 +24,7 @@ const ProjectDetailContainer = ({ preview }) => {
               key={image.id}
               url={image.imageUrl}
               position={image.id}
+              type={image.type}
               changeMainImage={changeMainImage}
             />
           ))}

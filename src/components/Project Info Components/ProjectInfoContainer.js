@@ -7,7 +7,7 @@ const ProjectInfoContainer = ({ changePreview }) => {
   return (
     <div className="bg-white rounded-xl flex gap-5 flex-col p-1">
       <Websiteproject changePreview={changePreview} />
-      <AndroidProject />
+      <AndroidProject changePreview={changePreview} />
       <LifeProject />
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
+import { imageDataDude, imageDataSmartWater } from '../../utils/imageData';
 
-const AndroidProject = () => {
+const AndroidProject = ({ changePreview }) => {
   const myRef = useRef(null);
   const myRef2 = useRef(null);
   const executeScroll = () =>
@@ -16,10 +17,15 @@ const AndroidProject = () => {
       inline: 'center',
     });
 
-  const changeToDude = () => {
+  const smartWater = imageDataSmartWater();
+  const dude = imageDataDude();
+
+  const changeToSmartWater = () => {
+    changePreview(smartWater);
     executeScroll2();
   };
-  const changeToSmartWater = () => {
+  const changeToDude = () => {
+    changePreview(dude);
     executeScroll();
   };
   return (
@@ -32,15 +38,17 @@ const AndroidProject = () => {
 
         <div
           ref={myRef2}
-          onClick={changeToDude}
+          onClick={changeToSmartWater}
           className="bg-black-steam w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center 
-        bg-dude-bg bg-cover cursor-pointer"
+        bg-smartwater-bg bg-cover cursor-pointer
+        hover:shadow-md transition duration-300"
         ></div>
         <div
           ref={myRef}
-          onClick={changeToSmartWater}
+          onClick={changeToDude}
           className="bg-orange-fancy w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center 
-        bg-smartwater-bg bg-cover cursor-pointer"
+        bg-dude-bg bg-cover cursor-pointer
+        hover:shadow-md transition duration-300"
         ></div>
         <div className="mr-[15%]"></div>
         {/* <div className="w-[15%] h-36 absolute left-0 bg-white/20 backdrop-blur-sm"></div>

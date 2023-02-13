@@ -30,8 +30,9 @@ const SocialMediaList = () => {
         <li className="flex items-center relative">
           <a
             target="_blank"
+            title="Github"
             rel="noopener noreferrer"
-            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow hover:drop-shadow"
+            className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://github.com/raybagas7"
           >
             <FiGithub />
@@ -40,6 +41,7 @@ const SocialMediaList = () => {
         <li className="bg-white flex items-center">
           <a
             target="_blank"
+            title="LinkedIn"
             rel="noopener noreferrer"
             className="hover:text-white hover:bg-blue-linked rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://linkedin.com/in/agas77"
@@ -50,6 +52,7 @@ const SocialMediaList = () => {
         <li className="bg-white flex items-center">
           <a
             target="_blank"
+            title="Twitter"
             rel="noopener noreferrer"
             className="hover:text-white hover:bg-blue-twitter rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://twitter.com/myyagas"
@@ -60,6 +63,7 @@ const SocialMediaList = () => {
         <li className="bg-white flex items-center">
           <a
             target="_blank"
+            title="Discord"
             rel="noopener noreferrer"
             className="hover:text-white hover:bg-blue-discord rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://dsc.bio/agas"
@@ -70,6 +74,7 @@ const SocialMediaList = () => {
         <li className="bg-white flex items-center">
           <button
             onClick={showAlert}
+            title="Email"
             className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow"
           >
             <FiMail />

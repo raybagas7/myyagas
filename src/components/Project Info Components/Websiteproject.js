@@ -19,7 +19,7 @@ const Websiteproject = ({ changePreview }) => {
     });
 
   const pokeCard = imageDataPokeCard();
-  console.log(pokeCard);
+  // console.log(pokeCard);
   const simpleNote = imageDataSimpleNote();
   const changeToPokeCard = () => {
     changePreview(pokeCard);
@@ -36,13 +36,13 @@ const Websiteproject = ({ changePreview }) => {
       </p>
       <div className="p-3 text-sm flex somein overflow-auto gap-2 snap-x hover:scroll-auto">
         <div className="ml-[15%]"></div>
-        <button
+        <div
           ref={myRef2}
           onClick={changeToPokeCard}
           className="bg-black-steam w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center 
         bg-pokecard-bg bg-cover cursor-pointer
         hover:shadow-md transition duration-300"
-        ></button>
+        ></div>
         <div
           ref={myRef}
           onClick={changeToSimpleNote}
