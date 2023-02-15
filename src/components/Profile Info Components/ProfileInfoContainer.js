@@ -55,7 +55,7 @@ const ProfileInfoContainer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5">
+      <div className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto">
         <div
           key={preview[0].id}
           className="w-full h-[500px] bg-white/50 rounded-xl p-3"

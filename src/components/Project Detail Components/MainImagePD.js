@@ -9,7 +9,7 @@ const MainImagePD = ({ mainImgData }) => {
       <div className="flex justify-center items-center h-full w-full">
         <img
           key={debounceUrl.id}
-          className="h-96 animate-brightness_bright w-[720px] object-cover rounded-xl drop-shadow-md"
+          className="h-[300px] animate-brightness_bright bg-teal-400 w-[560px] object-cover rounded-xl drop-shadow-md"
           src={`${debounceUrl.imageUrl}`}
           alt="main-img"
         ></img>

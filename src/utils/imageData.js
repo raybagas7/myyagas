@@ -5,6 +5,7 @@ const imageDataPokeCard = () => {
       type: 'website',
       imageUrl:
         'https://live.staticflickr.com/65535/52677504962_4ea3f192b1_b.jpg',
+      backend: ['nodejs', 'javascript', 'rabbitmq', 'nodemailer', 'postgres'],
     },
     {
       id: 1,
@@ -39,13 +40,13 @@ const imageDataSimpleNote = () => {
       id: 'main-img-simplenote',
       type: 'website',
       imageUrl:
-        'https://live.staticflickr.com/65535/52678514538_fdb90194fa_b.jpg',
+        'https://live.staticflickr.com/65535/52686454575_60093f2b65_b.jpg',
     },
     {
       id: 1,
       type: 'website',
       imageUrl:
-        'https://live.staticflickr.com/65535/52686454575_60093f2b65_b.jpg',
+        'https://live.staticflickr.com/65535/52678514538_fdb90194fa_b.jpg',
     },
     {
       id: 2,
