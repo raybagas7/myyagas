@@ -5,7 +5,27 @@ const imageDataPokeCard = () => {
       type: 'website',
       imageUrl:
         'https://live.staticflickr.com/65535/52677504962_4ea3f192b1_b.jpg',
-      backend: ['nodejs', 'javascript', 'rabbitmq', 'nodemailer', 'postgres'],
+      link: 'https://www.pokemoncard.my.id',
+      about: `<p class='indent-5'>Pokécard is a browser game that is not fully developed yet and will develop over time for fun. 
+      Pokécard stands for Pokemon and a card, Player can choose or pick the pokemon card they wanted through the shuffle system, 
+      there will be several pokemon appear with random skills when the player presses the shuffle button and they can choose 
+      the desired pokemon card. Pokemon come with some rarity from basic type to legendary shiny type pokemon. 
+      Players also can trade their cards among the other players or offer the card to other players' cards.</p>
+  
+      <p class='indent-5'>Future updates will allow players to a duel cards game and players can change their pokemon skill through items also players can level up the card with items</p>`,
+      frameworks: [
+        {
+          backend: [
+            'nodejs',
+            'javascript',
+            'rabbitmq',
+            'nodemailer',
+            'postgres',
+          ],
+        },
+        { frontend: ['reactjs', 'html', 'css', 'tailwind', 'reacticon'] },
+        { others: ['javascript', 'awsec2', 'awsampilify', 'awsrds', 'awsmq'] },
+      ],
     },
     {
       id: 1,
@@ -41,6 +61,20 @@ const imageDataSimpleNote = () => {
       type: 'website',
       imageUrl:
         'https://live.staticflickr.com/65535/52686454575_60093f2b65_b.jpg',
+      link: 'https://raybagas7.github.io/simpleNoteApp/',
+      frameworks: [
+        { backend: ['openapi'] },
+        { frontend: ['reactjs', 'html', 'css', 'reacticon'] },
+        { others: ['javascript', 'githubpages'] },
+      ],
+      about: `<p class='indent-5'>
+      Simplenote is just a simple web application for people to write their notes. Users can add a note, delete and archive it.
+      </p>
+
+      <p class='indent-5'>Users also can just use a search feature to find their notes by the title.
+      There is 2 kind of display mode. Light mode and Dark mode</p>
+      
+      <p class='indent-5'>Users also can choose an applications language between English and Indonesian</p>`,
     },
     {
       id: 1,
@@ -76,6 +110,8 @@ const imageDataSmartWater = () => {
       type: 'android',
       imageUrl:
         'https://live.staticflickr.com/65535/52685474440_625188c407_b.jpg',
+      link: null,
+      frameworks: [{ developed: ['androidstudio'] }, { others: ['firebase'] }],
     },
     {
       id: 1,
@@ -111,6 +147,8 @@ const imageDataDude = () => {
       type: 'android',
       imageUrl:
         'https://live.staticflickr.com/65535/52685380659_e81a495280_o.jpg',
+      link: null,
+      frameworks: [{ developed: ['androidstudio'] }, { others: ['firebase'] }],
     },
     {
       id: 1,

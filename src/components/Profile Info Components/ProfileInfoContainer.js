@@ -8,13 +8,6 @@ import ProjectDetailDescriptionContainer from '../Project Detail Description Com
 
 const ProfileInfoContainer = () => {
   const [preview, setPreview] = useState(imageDataPokeCard());
-  // const [imageData, setImageData] = useState();
-  // const [initializing, setInitializing] = React.useState(true);
-
-  // useEffect(() => {
-  //   setImageData(imageDataPokeCard());
-  //   setInitializing(false);
-  // }, []);
 
   const changePreview = (newPreview) => {
     setPreview(newPreview);
@@ -63,7 +56,11 @@ const ProfileInfoContainer = () => {
           <ProjectDetailContainer preview={preview} />
         </div>
         <div className="bg-white/50 flex-1 rounded-xl p-3">
-          <ProjectDetailDescriptionContainer />
+          <ProjectDetailDescriptionContainer
+            about={preview[0].about}
+            frameworks={preview[0].frameworks}
+            weblink={preview[0].link}
+          />
         </div>
       </div>
     </div>

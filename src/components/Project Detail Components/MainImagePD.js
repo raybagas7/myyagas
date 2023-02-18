@@ -3,13 +3,13 @@ import useDebounce from '../../hooks/useDebounce';
 
 const MainImagePD = ({ mainImgData }) => {
   const debounceUrl = useDebounce(mainImgData, 300);
-  console.log(debounceUrl);
+  // console.log(debounceUrl);
   return mainImgData.type === 'website' ? (
     <div className="h-full w-[60%] bg-white drop-shadow-md rounded-xl">
       <div className="flex justify-center items-center h-full w-full">
         <img
           key={debounceUrl.id}
-          className="h-[300px] animate-brightness_bright bg-teal-400 w-[560px] object-cover rounded-xl drop-shadow-md"
+          className="h-[30 q0px] animate-brightness_bright bg-teal-400 w-[560px] object-cover rounded-xl drop-shadow-md"
           src={`${debounceUrl.imageUrl}`}
           alt="main-img"
         ></img>
