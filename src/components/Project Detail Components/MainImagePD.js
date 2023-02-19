@@ -9,7 +9,8 @@ const MainImagePD = ({ mainImgData }) => {
       <div className="flex justify-center items-center h-full w-full">
         <img
           key={debounceUrl.id}
-          className="h-[30 q0px] animate-brightness_bright bg-teal-400 w-[560px] object-cover rounded-xl drop-shadow-md"
+          className="h-[300px] animate-brightness_bright bg-teal-400 w-[560px] object-cover rounded-xl drop-shadow-md
+          max-2xl:h-[200px] max-2xl:w-[370px]"
           src={`${debounceUrl.imageUrl}`}
           alt="main-img"
         ></img>
@@ -21,7 +22,8 @@ const MainImagePD = ({ mainImgData }) => {
       <div className="flex justify-center items-center h-full w-full">
         <img
           key={debounceUrl.id}
-          className="h-96 animate-brightness_bright w-[720px] object-contain bg-black-steam rounded-xl drop-shadow-md"
+          className="h-[300px] animate-brightness_bright w-[560px] object-contain bg-black-steam rounded-xl drop-shadow-md
+          max-2xl:h-[200px] max-2xl:w-[370px]"
           src={`${debounceUrl.imageUrl}`}
           alt="main-img"
         ></img>

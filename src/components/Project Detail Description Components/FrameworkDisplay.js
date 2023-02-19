@@ -10,7 +10,7 @@ const FrameworkDisplay = ({ framework }) => {
       <p className="bg-purple-dark-fancy first-letter:capitalize rounded-t-xl text-sm p-1 text-center text-white">
         {Object.keys(framework)}
       </p>
-      <div className="flex gap-2 justify-center items-center flex-1">
+      <div className="flex gap-2 justify-center items-center flex-1 p-1">
         {framework[Object.keys(framework)[0]].map((item) => (
           <FrameworkIcon item={item} key={item} />
         ))}

@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     screens: {
       tablet: '725px',
-      '2xl': '1537px',
+      '2xl': '1573px',
       xl: '1281px',
       lg: '1025px',
       md: '769px',
@@ -20,8 +20,8 @@ module.exports = {
       },
       backgroundImage: {
         'main-bg': "url('/public/images/main-bg.png')",
-        'pokecard-bg': "url('/public/images/PokeCard/HomePage.PNG')",
-        'simplenote-bg': "url('/public/images/SimpleNote/simpleNote.PNG')",
+        'pokecard-bg': "url('/public/images/PokeCard/HomePage.jpg')",
+        'simplenote-bg': "url('/public/images/SimpleNote/simpleNote.jpg')",
         'dude-bg': "url('/public/images/Dude/DudeLogin.jpg')",
         'smartwater-bg': "url('/public/images/SmartWater/DebitWater.jpg')",
       },

@@ -1,6 +1,7 @@
 import React from 'react';
 // import { FaGitAlt } from 'react-icons/fa';
 import { FiLink2 } from 'react-icons/fi';
+import { FaYoutube } from 'react-icons/fa';
 
 const LinkProject = ({ weblink }) => {
   return (
@@ -11,10 +12,24 @@ const LinkProject = ({ weblink }) => {
       >
         <FaGitAlt />
       </li> */}
-      {weblink === null ? null : (
+      {weblink === null ? (
         <li
-          className="text-3xl w-fit h-fit p-2 rounded-full hover:text-white cursor-pointer
-      hover:bg-black-steam hover:drop-shadow transition duration-300"
+          className="text-3xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
+      hover:bg-white hover:drop-shadow transition duration-300"
+        >
+          <a
+            target="_blank"
+            title="Website"
+            rel="noopener noreferrer"
+            href={weblink}
+          >
+            <FaYoutube href={weblink} />
+          </a>
+        </li>
+      ) : (
+        <li
+          className="text-3xl w-fit h-fit p-2 rounded-full hover:text-blue-500 cursor-pointer
+      hover:bg-white hover:drop-shadow transition duration-300"
         >
           <a
             target="_blank"
