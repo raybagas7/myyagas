@@ -21,10 +21,22 @@ const imageDataPokeCard = () => {
             'rabbitmq',
             'nodemailer',
             'postgres',
+            'hapi',
           ],
         },
-        { frontend: ['reactjs', 'html', 'css', 'tailwind', 'reacticon'] },
-        { others: ['javascript', 'awsec2', 'awsampilify', 'awsrds', 'awsmq'] },
+        {
+          frontend: [
+            'reactjs',
+            'html',
+            'css',
+            'tailwind',
+            'reacticon',
+            'fejavascript',
+          ],
+        },
+        {
+          others: ['aws', 'awsec2', 'awsamplify', 'awsrds', 'awsmq'],
+        },
       ],
     },
     {
@@ -64,8 +76,8 @@ const imageDataSimpleNote = () => {
       link: 'https://raybagas7.github.io/simpleNoteApp/',
       frameworks: [
         { backend: ['openapi'] },
-        { frontend: ['reactjs', 'html', 'css', 'reacticon'] },
-        { others: ['javascript', 'githubpages'] },
+        { frontend: ['reactjs', 'html', 'css', 'reacticon', 'fejavascript'] },
+        { others: ['githubpages'] },
       ],
       about: `<p class='indent-5'>
       Simplenote is just a simple web application for people to write their notes. Users can add a note, delete and archive it.
