@@ -6,7 +6,7 @@ module.exports = {
       tablet: '725px',
       '2xl': '1573px',
       xl: '1281px',
-      lg: '1025px',
+      lg: '1130px',
       md: '769px',
       sm: '641px',
     },
@@ -17,6 +17,11 @@ module.exports = {
     extend: {
       flex: {
         2: '2 2 0%',
+      },
+      fontSize: {
+        xxs: '0.6rem',
+        xxxs: '0.5rem',
+        xxxxs: '0.4rem',
       },
       backgroundImage: {
         'main-bg': "url('/public/images/main-bg.png')",

@@ -35,7 +35,7 @@ const SocialMediaList = () => {
             className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://github.com/raybagas7"
           >
-            <FiGithub />
+            <FiGithub className="max-2xl:w-3.5 max-2xl:h-3.5" />
           </a>
         </li>
         <li className="bg-white flex items-center">
@@ -46,7 +46,7 @@ const SocialMediaList = () => {
             className="hover:text-white hover:bg-blue-linked rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://linkedin.com/in/agas77"
           >
-            <FiLinkedin />
+            <FiLinkedin className="max-2xl:w-3.5 max-2xl:h-3.5" />
           </a>
         </li>
         <li className="bg-white flex items-center">
@@ -57,7 +57,7 @@ const SocialMediaList = () => {
             className="hover:text-white hover:bg-blue-twitter rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://twitter.com/myyagas"
           >
-            <FiTwitter />
+            <FiTwitter className="max-2xl:w-3.5 max-2xl:h-3.5" />
           </a>
         </li>
         <li className="bg-white flex items-center">
@@ -68,7 +68,7 @@ const SocialMediaList = () => {
             className="hover:text-white hover:bg-blue-discord rounded-full p-2 transition duration-300 hover:drop-shadow"
             href="https://dsc.bio/agas"
           >
-            <RxDiscordLogo />
+            <RxDiscordLogo className="max-2xl:w-3.5 max-2xl:h-3.5" />
           </a>
         </li>
         <li className="bg-white flex items-center">
@@ -77,7 +77,7 @@ const SocialMediaList = () => {
             title="Email"
             className="hover:text-white hover:bg-black rounded-full p-2 transition duration-300 hover:drop-shadow"
           >
-            <FiMail />
+            <FiMail className="max-2xl:w-3.5 max-2xl:h-3.5" />
           </button>
         </li>
       </ul>

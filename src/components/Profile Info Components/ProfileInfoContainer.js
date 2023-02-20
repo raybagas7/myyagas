@@ -18,16 +18,30 @@ const ProfileInfoContainer = () => {
   // }
 
   return (
-    <div className="w-full h-full bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5">
-      <div className="shrink-0 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5">
-        <div className="w-full flex flex-col h-64 drop-shadow-md bg-white rounded-xl mb-3">
-          <p className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg">
+    <div
+      className="w-full h-full bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5
+    max-lg:flex-col max-lg:overflow-auto"
+    >
+      <div
+        className="shrink-0 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5
+      max-2xl:w-[360px]
+      max-lg:w-full max-lg:items-center"
+      >
+        <div
+          className="w-full flex flex-col h-64 drop-shadow-md bg-white rounded-xl mb-3
+        max-lg:w-460"
+        >
+          <p
+            className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
+          max-2xl:text-base"
+          >
             Ray Samudra Bagas Daniarsyah
           </p>
           <div className="flex-1 flex rounded-b-xl">
             <div className="p-3 h-full w-fit flex justify-center items-center">
               <img
-                className="w-32 h-32 rounded-full drop-shadow"
+                className="w-32 h-32 rounded-full drop-shadow
+                max-2xl:w-24 max-2xl:h-24"
                 src="https://pokecard-agas.s3.ap-southeast-1.amazonaws.com/pp-poke-tIODjLwH7XrMyHu5"
                 alt="agas_img"
               />
@@ -39,11 +53,21 @@ const ProfileInfoContainer = () => {
           </div>
         </div>
         <div></div>
-        <p className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg">
+        <p
+          className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
+        max-2xl:text-base
+        max-lg:w-full max-lg:min-w-[460px]"
+        >
           My Project
         </p>
-        <div className="h-full flex flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl">
-          <div className="p-3 flex-1">
+        <div
+          className="h-full flex flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl
+         max-lg:min-w-[460px]"
+        >
+          <div
+            className="p-3 flex-1
+          max-2xl:p-1"
+          >
             <ProjectInfoContainer changePreview={changePreview} />
           </div>
         </div>
@@ -51,7 +75,8 @@ const ProfileInfoContainer = () => {
       <div className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto">
         <div
           key={preview[0].id}
-          className="w-full h-[500px] bg-white/50 rounded-xl p-3"
+          className="w-full h-[500px] bg-white/50 rounded-xl p-3
+          max-lg:h-fit"
         >
           <ProjectDetailContainer preview={preview} />
         </div>

@@ -20,6 +20,7 @@ const MainOpening = () => {
   return (
     <div
       className={`h-screen relative bg-main-bg bg-cover
+      max-lg:h-fit
     ${opening ? 'p-5' : null}`}
     >
       {opening ? (

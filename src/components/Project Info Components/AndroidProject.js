@@ -33,7 +33,10 @@ const AndroidProject = ({ changePreview }) => {
       <p className="p-1.5 bg-gold-fancy text-sm text-black-steam rounded-t-xl text-center">
         Android
       </p>
-      <div className="p-3 text-sm flex overflow-auto gap-2 snap-x hover:scroll-auto">
+      <div
+        className="p-3 text-sm flex overflow-auto gap-2 snap-x hover:scroll-auto
+      max-lg:justify-center"
+      >
         <div className="ml-[15%]"></div>
 
         <div
@@ -41,14 +44,16 @@ const AndroidProject = ({ changePreview }) => {
           onClick={changeToSmartWater}
           className="bg-black-steam w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center 
         bg-smartwater-bg bg-cover cursor-pointer
-        hover:shadow-md transition duration-300"
+        hover:shadow-md transition duration-300
+        max-2xl:w-48 max-2xl:h-28"
         ></div>
         <div
           ref={myRef}
           onClick={changeToDude}
           className="bg-orange-fancy w-64 h-36 rounded-xl drop-shadow-md shrink-0 snap-always snap-center 
         bg-dude-bg bg-cover cursor-pointer
-        hover:shadow-md transition duration-300"
+        hover:shadow-md transition duration-300
+        max-2xl:w-48 max-2xl:h-28"
         ></div>
         <div className="mr-[15%]"></div>
         {/* <div className="w-[15%] h-36 absolute left-0 bg-white/20 backdrop-blur-sm"></div>
