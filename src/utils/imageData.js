@@ -10,10 +10,12 @@ const imageDataPokeCard = () => {
       about: `<p class='indent-5'>Pokécard is a browser game that is not fully developed yet and will develop over time for fun. 
       Pokécard stands for Pokemon and a card, Player can choose or pick the pokemon card they wanted through the shuffle system, 
       there will be several pokemon appear with random skills when the player presses the shuffle button and they can choose 
-      the desired pokemon card. Pokemon come with some rarity from basic type to legendary shiny type pokemon. 
+      the desired pokemon card.</p>
+
+      <p class='indent-5'> Pokemon come with some rarity from basic type to legendary shiny type pokemon. 
       Players also can trade their cards among the other players or offer the card to other players' cards.</p>
   
-      <p class='indent-5'>Future updates will allow players to a duel cards game and players can change their pokemon skill through items also players can level up the card with items</p>`,
+      <p class='indent-5'>Future updates will allow players to a duel cards game and players can change their pokemon skill through items also players can level up the card with items.</p>`,
       frameworks: [
         {
           backend: [
@@ -130,6 +132,17 @@ const imageDataSmartWater = () => {
         { framework: ['androidstudio', 'java', 'googlemap'] },
         { others: ['firebase'] },
       ],
+      about: `
+      <p class='indent-5'>Smart Water PDAM is a monitoring application for embedded system devices, this applications
+      monitors data provided by two IoT devices for detecting water discharge and water quality in water pipes.</p>
+      <p class='indent-5'>The application can set the location of the device to be implemented with the help of google maps API
+      by pointing directly to the locations where the user is or belong.</p>
+      <p class='indent-5'>For water discharge monitoring, users have to set the timer to get the average value of water discharge in a certain time
+      and push the start/play button to start counting the average water discharge value.</p>
+      <p class='indent-5'>For quality monitoring, users will receive the information about the water conditions from several categories 
+      e.g., Total dissolved solids, Temperature, Turbidity, ORP, pH, Well Type, and Free Chlorine.</p>
+      <p class='indent-5'>The application will allow the users to save the recorded value for water discharge and water quality for documentation purposes.</p>
+      <p class='indent-5'>Both the embedded system devices and this application are connected to 1 service, Both are connected into Firebase Realtime Database.</p>`,
     },
     {
       id: 1,
@@ -171,6 +184,11 @@ const imageDataDude = () => {
         { framework: ['androidstudio', 'java'] },
         { others: ['firebase'] },
       ],
+      about: `<p class='indent-5'>Dude is the name of the application for chatting, basically, Dude is like any other chat application.
+      User needs to become a friend before they chat with each other.</p>
+      <p class='indent-5'>This application implements public and secret keys to prevent the text from leaking.
+      Only two people who are already friends and open a chat can read the whole message in plain text, 
+      other than both of them the messages have no meaning because they are encrypted</p>`,
     },
     {
       id: 1,
