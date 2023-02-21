@@ -97,12 +97,14 @@ module.exports = {
           '0%': {
             opacity: '100%',
             transform: 'scale(1)',
-            'background-color': '#e41f25',
+            background:
+              'linear-gradient(0deg, rgba(117,26,19,1) 0%, rgba(235,31,36,1) 100%)',
           },
           '60%': {
             opacity: '100%',
             transform: 'scale(1.2)',
-            'background-color': '#ffd400',
+            background:
+              'linear-gradient(0deg, rgba(245,130,22,1) 0%, rgba(255,212,0,1) 100%)',
           },
           '100%': {
             opacity: '0%',
@@ -118,6 +120,14 @@ module.exports = {
           '30%': { opacity: '100%', transform: 'scale(1.3)' },
           '100%': { opacity: '100%', transform: 'scale(1)' },
         },
+        default_quantum: {
+          '0%': {
+            transform: 'scale(0)',
+            visibility: 'visible',
+          },
+          '30%': { opacity: '100%', transform: 'scale(1.02)' },
+          '100%': { opacity: '100%', transform: 'scale(1)' },
+        },
         brightness_bright: {
           '0%': { filter: 'brightness(50%)' },
           '100%': { filter: 'brightness(100%)' },
@@ -130,6 +140,7 @@ module.exports = {
         bigger_bouncing: 'bigger_bouncing 0.5s forwards',
         fade_out_quantum_bouncing: 'fade_out_quantum_bouncing 1s forwards',
         default_quantum_bouncing: 'default_quantum_bouncing 0.5s forwards',
+        default_quantum: 'default_quantum 0.3s forwards',
         brightness_bright: 'brightness_bright 0.5s forwards',
       },
     },

@@ -19,12 +19,12 @@ const ProfileInfoContainer = () => {
 
   return (
     <div
-      className="w-full h-full bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5
+      className="w-full h-full animate-default_quantum bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5
     max-lg:flex-col max-lg:overflow-auto
     max-sm:p-2"
     >
       <div
-        className="shrink-0 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5
+        className="shrink-0 scale-0 animate-default_quantum animation-delay-300 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5
       max-2xl:w-[360px]
       max-lg:w-full max-lg:items-center
       max-sm:p-2"
@@ -79,6 +79,7 @@ const ProfileInfoContainer = () => {
       </div>
       <div
         className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto
+        animate-default_quantum animation-delay-300 scale-0
       max-sm:p-2"
       >
         <div
