@@ -20,16 +20,19 @@ const ProfileInfoContainer = () => {
   return (
     <div
       className="w-full h-full bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5
-    max-lg:flex-col max-lg:overflow-auto"
+    max-lg:flex-col max-lg:overflow-auto
+    max-sm:p-2"
     >
       <div
         className="shrink-0 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5
       max-2xl:w-[360px]
-      max-lg:w-full max-lg:items-center"
+      max-lg:w-full max-lg:items-center
+      max-sm:p-2"
       >
         <div
           className="w-full flex flex-col h-64 drop-shadow-md bg-white rounded-xl mb-3
-        max-lg:w-460"
+        max-lg:w-460
+        max-sm:w-full max-sm:h-60"
         >
           <p
             className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
@@ -56,13 +59,15 @@ const ProfileInfoContainer = () => {
         <p
           className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
         max-2xl:text-base
-        max-lg:w-full max-lg:min-w-[460px]"
+        max-lg:w-full max-lg:min-w-[460px]
+        max-sm:min-w-full"
         >
           My Project
         </p>
         <div
           className="h-full flex flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl
-         max-lg:min-w-[460px]"
+         max-lg:min-w-[460px]
+         max-sm:min-w-full"
         >
           <div
             className="p-3 flex-1
@@ -72,15 +77,22 @@ const ProfileInfoContainer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto">
+      <div
+        className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto
+      max-sm:p-2"
+      >
         <div
           key={preview[0].id}
           className="w-full h-[500px] bg-white/50 rounded-xl p-3
-          max-lg:h-fit"
+          max-lg:h-fit
+          max-sm:p-0 max-sm:bg-transparent"
         >
           <ProjectDetailContainer preview={preview} />
         </div>
-        <div className="bg-white/50 flex-1 rounded-xl p-3">
+        <div
+          className="bg-white/50 flex-1 rounded-xl p-3
+        max-sm:p-0 max-sm:bg-transparent"
+        >
           <ProjectDetailDescriptionContainer
             about={preview[0].about}
             frameworks={preview[0].frameworks}

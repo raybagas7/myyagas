@@ -22,7 +22,8 @@ const ProjectDetailContainer = ({ preview }) => {
         <h2
           className="text-xl p-2 bg-purple-dark-fancy drop-shadow-md text-white rounded-xl 
         max-2xl:p-1
-        max-lg:mt-5"
+        max-lg:mt-5
+        max-sm:text-sm max-sm:p-2"
         >
           Preview
         </h2>

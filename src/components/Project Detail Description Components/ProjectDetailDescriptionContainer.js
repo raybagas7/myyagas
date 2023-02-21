@@ -7,7 +7,10 @@ const ProjectDetailDescriptionContainer = ({ about, frameworks, weblink }) => {
   // console.log(Object.keys(frameworks));
   // console.log(frameworks);
   return (
-    <section className="w-full h-full bg-white flex gap-2 rounded-xl p-5">
+    <section
+      className="w-full h-full bg-white flex gap-2 rounded-xl p-5
+    max-lg:flex-col"
+    >
       <div className="w-fit h-fit flex flex-col gap-3">
         <ProjectFullDescription about={about} />
         <LinkProject weblink={weblink} />
