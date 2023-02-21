@@ -97,6 +97,7 @@ const ProfileInfoContainer = () => {
             about={preview[0].about}
             frameworks={preview[0].frameworks}
             weblink={preview[0].link}
+            youtube={preview[0].youtube}
           />
         </div>
       </div>

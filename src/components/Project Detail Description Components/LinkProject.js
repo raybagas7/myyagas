@@ -3,7 +3,7 @@ import React from 'react';
 import { FiLink2 } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 
-const LinkProject = ({ weblink }) => {
+const LinkProject = ({ weblink, youtube }) => {
   return (
     <ul className="p-1 flex gap-1">
       {/* <li
@@ -12,6 +12,7 @@ const LinkProject = ({ weblink }) => {
       >
         <FaGitAlt />
       </li> */}
+
       {weblink === null ? (
         <li
           className="text-3xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
@@ -21,12 +22,14 @@ const LinkProject = ({ weblink }) => {
             target="_blank"
             title="Website"
             rel="noopener noreferrer"
-            href={weblink}
+            href={youtube}
           >
-            <FaYoutube href={weblink} />
+            <FaYoutube href={youtube} />
           </a>
         </li>
-      ) : (
+      ) : null}
+
+      {youtube === null ? (
         <li
           className="text-3xl w-fit h-fit p-2 rounded-full hover:text-blue-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300"
@@ -40,7 +43,7 @@ const LinkProject = ({ weblink }) => {
             <FiLink2 href={weblink} />
           </a>
         </li>
-      )}
+      ) : null}
     </ul>
   );
 };

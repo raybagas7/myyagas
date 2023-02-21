@@ -3,7 +3,12 @@ import FrameworkDisplay from './FrameworkDisplay';
 import LinkProject from './LinkProject';
 import ProjectFullDescription from './ProjectFullDescription';
 
-const ProjectDetailDescriptionContainer = ({ about, frameworks, weblink }) => {
+const ProjectDetailDescriptionContainer = ({
+  about,
+  frameworks,
+  weblink,
+  youtube,
+}) => {
   // console.log(Object.keys(frameworks));
   // console.log(frameworks);
   return (
@@ -13,7 +18,7 @@ const ProjectDetailDescriptionContainer = ({ about, frameworks, weblink }) => {
     >
       <div className="w-fit h-fit flex flex-col gap-3">
         <ProjectFullDescription about={about} />
-        <LinkProject weblink={weblink} />
+        <LinkProject weblink={weblink} youtube={youtube} />
       </div>
       <div className="bg-white border-2 flex flex-col gap-2 p-2 border-black-steam/20 shadow-md w-full h-full rounded-xl">
         {frameworks.map((framework) => (

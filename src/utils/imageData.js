@@ -6,6 +6,7 @@ const imageDataPokeCard = () => {
       imageUrl:
         'https://live.staticflickr.com/65535/52677504962_4ea3f192b1_b.jpg',
       link: 'https://www.pokemoncard.my.id',
+      youtube: null,
       about: `<p class='indent-5'>Pokécard is a browser game that is not fully developed yet and will develop over time for fun. 
       Pokécard stands for Pokemon and a card, Player can choose or pick the pokemon card they wanted through the shuffle system, 
       there will be several pokemon appear with random skills when the player presses the shuffle button and they can choose 
@@ -74,6 +75,7 @@ const imageDataSimpleNote = () => {
       imageUrl:
         'https://live.staticflickr.com/65535/52686454575_60093f2b65_b.jpg',
       link: 'https://raybagas7.github.io/simpleNoteApp/',
+      youtube: null,
       frameworks: [
         { backend: ['openapi'] },
         { frontend: ['reactjs', 'html', 'css', 'reacticon', 'fejavascript'] },
@@ -123,7 +125,11 @@ const imageDataSmartWater = () => {
       imageUrl:
         'https://live.staticflickr.com/65535/52685474440_625188c407_b.jpg',
       link: null,
-      frameworks: [{ developed: ['androidstudio'] }, { others: ['firebase'] }],
+      youtube: 'https://www.youtube.com/watch?v=9U3y4oO17jo',
+      frameworks: [
+        { framework: ['androidstudio', 'java', 'googlemap'] },
+        { others: ['firebase'] },
+      ],
     },
     {
       id: 1,
@@ -160,7 +166,11 @@ const imageDataDude = () => {
       imageUrl:
         'https://live.staticflickr.com/65535/52685380659_e81a495280_o.jpg',
       link: null,
-      frameworks: [{ developed: ['androidstudio'] }, { others: ['firebase'] }],
+      youtube: 'https://www.youtube.com/watch?v=oIAXYWHUfxQ',
+      frameworks: [
+        { framework: ['androidstudio', 'java'] },
+        { others: ['firebase'] },
+      ],
     },
     {
       id: 1,

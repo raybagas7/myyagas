@@ -7,6 +7,7 @@ import {
   SiTailwindcss,
   SiAndroidstudio,
   SiFirebase,
+  SiJava,
 } from 'react-icons/si';
 import { FaAws, FaNode } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
@@ -14,6 +15,7 @@ import { Icon } from '@iconify/react';
 import ReactIconSVG from './ReactIconSVG';
 
 const FrameworkIcon = ({ item }) => {
+  // console.log(item);
   return (
     <div className="max-lg:p-1 max-lg:pt-3 max-lg:pb-3">
       {item === 'nodejs' ? (
@@ -148,6 +150,19 @@ const FrameworkIcon = ({ item }) => {
       ) : item === 'firebase' ? (
         <SiFirebase
           className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#ffca2a]
+        max-2xl:w-4 max-2xl:h-4
+        max-lg:w-7 max-lg:h-7"
+        />
+      ) : item === 'java' ? (
+        <SiJava
+          className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#eb2024]
+        max-2xl:w-4 max-2xl:h-4
+        max-lg:w-7 max-lg:h-7"
+        />
+      ) : item === 'googlemap' ? (
+        <Icon
+          icon="logos:google-maps"
+          className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#eb2024]
         max-2xl:w-4 max-2xl:h-4
         max-lg:w-7 max-lg:h-7"
         />
