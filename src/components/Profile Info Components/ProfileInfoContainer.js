@@ -45,7 +45,7 @@ const ProfileInfoContainer = () => {
               <img
                 className="w-32 h-32 rounded-full drop-shadow
                 max-2xl:w-24 max-2xl:h-24"
-                src="https://pokecard-agas.s3.ap-southeast-1.amazonaws.com/pp-poke-tIODjLwH7XrMyHu5"
+                src="https://live.staticflickr.com/65535/52702313220_66ace4c07f_o.png"
                 alt="agas_img"
               />
             </div>
