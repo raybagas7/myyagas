@@ -20,7 +20,10 @@ const ProjectDetailDescriptionContainer = ({
         <ProjectFullDescription about={about} />
         <LinkProject weblink={weblink} youtube={youtube} />
       </div>
-      <div className="bg-white border-2 flex flex-col gap-2 p-2 border-black-steam/20 shadow-md w-full h-full rounded-xl">
+      <div
+        className="bg-white border-2 flex flex-col gap-2 p-2 border-black-steam/20 shadow-md w-full h-full rounded-xl
+      max-sm:h-[280px]"
+      >
         {frameworks.map((framework) => (
           <FrameworkDisplay
             framework={framework}

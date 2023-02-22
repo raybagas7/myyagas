@@ -27,7 +27,7 @@ const ProfileInfoContainer = () => {
         className="shrink-0 scale-0 animate-default_quantum animation-delay-300 bg-white/50 flex flex-col w-460 overflow-auto rounded-xl p-5
       max-2xl:w-[360px]
       max-lg:w-full max-lg:items-center
-      max-sm:p-2"
+      max-sm:p-2 max-sm:animate-none max-sm:scale-100"
       >
         <div
           className="w-full flex flex-col h-64 drop-shadow-md bg-white rounded-xl mb-3
@@ -80,19 +80,19 @@ const ProfileInfoContainer = () => {
       <div
         className="bg-white/50 flex flex-col gap-2 flex-2 rounded-xl p-5 overflow-auto
         animate-default_quantum animation-delay-300 scale-0
-      max-sm:p-2"
+      max-sm:p-2 max-sm:animate-none max-sm:scale-100"
       >
         <div
           key={preview[0].id}
           className="w-full h-[500px] bg-white/50 rounded-xl p-3
           max-lg:h-fit
-          max-sm:p-0 max-sm:bg-transparent"
+          max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100"
         >
           <ProjectDetailContainer preview={preview} />
         </div>
         <div
           className="bg-white/50 flex-1 rounded-xl p-3
-        max-sm:p-0 max-sm:bg-transparent"
+        max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100"
         >
           <ProjectDetailDescriptionContainer
             about={preview[0].about}

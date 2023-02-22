@@ -96,16 +96,16 @@ module.exports = {
         fade_out_quantum_bouncing: {
           '0%': {
             opacity: '100%',
-            transform: 'scale(1)',
             background:
               'linear-gradient(0deg, rgba(117,26,19,1) 0%, rgba(235,31,36,1) 100%)',
           },
+          '0%, 40%': { transform: 'rotate(0deg)' },
           '60%': {
             opacity: '100%',
-            transform: 'scale(1.2)',
             background:
               'linear-gradient(0deg, rgba(245,130,22,1) 0%, rgba(255,212,0,1) 100%)',
           },
+          '60%, 90%': { transform: 'rotate(-360deg)' },
           '100%': {
             opacity: '0%',
             transform: 'scale(0)',
