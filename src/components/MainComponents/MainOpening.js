@@ -19,9 +19,9 @@ const MainOpening = () => {
   };
   return (
     <div
-      className={`h-screen relative bg-main-bg bg-cover
+      className={`h-screen min-h-screen relative bg-main-bg bg-cover
       max-lg:h-fit
-    ${opening ? 'p-5' : null}`}
+    ${opening ? 'p-5 max-sm:p-2' : null}`}
     >
       {opening ? (
         <ProfileInfoContainer />
