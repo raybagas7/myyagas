@@ -88,6 +88,22 @@ module.exports = {
           '0%': { transform: 'scaleX(1)' },
           '100%': { transform: 'scaleX(0)', visibility: 'hidden' },
         },
+        visit_default_lg: {
+          '0%': { width: '100%' },
+          '100%': { width: '3.5rem' },
+        },
+        visit_default: {
+          '0%': { width: '100%' },
+          '100%': { width: '4rem' },
+        },
+        expand_visit_lg: {
+          '0%': { width: '3.5rem' },
+          '100%': { width: '100%' },
+        },
+        expand_visit: {
+          '0%': { width: '4rem' },
+          '100%': { width: '100%' },
+        },
         bigger_bouncing: {
           '0%': { transform: 'scale(1)' },
           '30%': { transform: 'scale(1.3)' },
@@ -141,6 +157,10 @@ module.exports = {
         fade_out_quantum_bouncing: 'fade_out_quantum_bouncing 1s forwards',
         default_quantum_bouncing: 'default_quantum_bouncing 0.5s forwards',
         default_quantum: 'default_quantum 0.3s forwards',
+        expand_visit: 'expand_visit 0.5s forwards',
+        expand_visit_lg: 'expand_visit_lg 0.5s forwards',
+        visit_default_lg: 'visit_default_lg 0.5s forwards',
+        visit_default: 'visit_default 0.5s forwards',
         brightness_bright: 'brightness_bright 0.5s forwards',
       },
     },
