@@ -1,9 +1,9 @@
 import React from 'react';
-// import { FaGitAlt } from 'react-icons/fa';
+import { FaGitAlt } from 'react-icons/fa';
 import { FiLink2 } from 'react-icons/fi';
 import { FaYoutube } from 'react-icons/fa';
 
-const LinkProject = ({ weblink, youtube }) => {
+const LinkProject = ({ weblink, youtube, gitbe, gitfe }) => {
   return (
     <div className="w-fit">
       <ul
@@ -21,23 +21,7 @@ const LinkProject = ({ weblink, youtube }) => {
       >
         <FaGitAlt />
       </li> */}
-        {weblink === null ? (
-          <li
-            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
-      hover:bg-white hover:drop-shadow transition duration-300
-      max-lg:p-1.5 max-lg:text-xl"
-          >
-            <a
-              target="_blank"
-              title="Youtube"
-              rel="noopener noreferrer"
-              href={youtube}
-            >
-              <FaYoutube href={youtube} />
-            </a>
-          </li>
-        ) : null}
-        {youtube === null ? (
+        {weblink !== null ? (
           <li
             className="text-2xl w-fit h-fit p-2 rounded-full hover:text-blue-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300
@@ -49,7 +33,55 @@ const LinkProject = ({ weblink, youtube }) => {
               rel="noopener noreferrer"
               href={weblink}
             >
-              <FiLink2 href={weblink} />
+              <FiLink2 />
+            </a>
+          </li>
+        ) : null}
+        {youtube !== null ? (
+          <li
+            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
+      hover:bg-white hover:drop-shadow transition duration-300
+      max-lg:p-1.5 max-lg:text-xl"
+          >
+            <a
+              target="_blank"
+              title="Youtube"
+              rel="noopener noreferrer"
+              href={youtube}
+            >
+              <FaYoutube />
+            </a>
+          </li>
+        ) : null}
+        {gitbe !== null ? (
+          <li
+            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
+      hover:bg-white hover:drop-shadow transition duration-300
+      max-lg:p-1.5 max-lg:text-xl"
+          >
+            <a
+              target="_blank"
+              title="Github Backend"
+              rel="noopener noreferrer"
+              href={gitbe}
+            >
+              <FaGitAlt />
+            </a>
+          </li>
+        ) : null}
+        {gitfe !== null ? (
+          <li
+            className="text-2xl w-fit h-fit p-2 text-blue-500 rounded-full hover:text-red-500 cursor-pointer
+      hover:bg-white hover:drop-shadow transition duration-300
+      max-lg:p-1.5 max-lg:text-xl"
+          >
+            <a
+              target="_blank"
+              title="Github FrontEnd"
+              rel="noopener noreferrer"
+              href={gitfe}
+            >
+              <FaGitAlt />
             </a>
           </li>
         ) : null}

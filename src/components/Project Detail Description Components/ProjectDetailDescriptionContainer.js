@@ -8,6 +8,8 @@ const ProjectDetailDescriptionContainer = ({
   frameworks,
   weblink,
   youtube,
+  gitbe,
+  gitfe,
 }) => {
   // console.log(Object.keys(frameworks));
   // console.log(frameworks);
@@ -18,7 +20,12 @@ const ProjectDetailDescriptionContainer = ({
     >
       <div className="w-fit h-fit flex flex-col gap-3">
         <ProjectFullDescription about={about} />
-        <LinkProject weblink={weblink} youtube={youtube} />
+        <LinkProject
+          weblink={weblink}
+          youtube={youtube}
+          gitbe={gitbe}
+          gitfe={gitfe}
+        />
       </div>
       <div
         className="bg-white border-2 flex flex-col gap-2 p-2 border-black-steam/20 shadow-md w-full h-full rounded-xl
