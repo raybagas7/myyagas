@@ -7,11 +7,11 @@ const LinkProject = ({ weblink, youtube, gitbe, gitfe }) => {
   return (
     <div className="w-fit">
       <ul
-        className="flex gap-2 cursor-pointer items-center border-2 animate-visit_default hover:animate-expand_visit border-purple-dark-fancy shadow-md w-16 overflow-hidden rounded-full pr-2
+        className="flex gap-2 items-center border-2 animate-visit_default hover:animate-expand_visit border-purple-dark-fancy shadow-md w-16 overflow-hidden rounded-full pr-2
       max-lg:w-14 max-lg:animate-visit_default_lg max-lg:hover:animate-expand_visit_lg"
       >
         <div className="bg-purple-dark-fancy border-r-2 border-purple-dark-fancy">
-          <p className="bg-purple-dark-fancy p-3 w-fit text-center text-white rounded-full max-lg:text-xs">
+          <p className="bg-purple-dark-fancy cursor-default p-3 w-fit text-center text-white rounded-full max-lg:text-xs">
             VISIT
           </p>
         </div>
