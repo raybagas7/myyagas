@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-// import { imageDataPokeCard } from '../../utils/imageData';
 import ImagePreview from './ImagePreview';
 import MainImagePD from './MainImagePD';
 
 const ProjectDetailContainer = ({ preview }) => {
   const urlPool = preview;
   const [mainImgData, setMainImageData] = useState(urlPool[0]);
-  // console.log(urlPool);
 
   const changeMainImage = (newPosition) => {
     setMainImageData(urlPool[newPosition]);
