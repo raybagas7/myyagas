@@ -1,16 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ProjectDetailContainer from '../Project Detail Components/ProjectDetailContainer';
 import ProjectInfoContainer from '../Project Info Components/ProjectInfoContainer';
 import ImportantToKnow from './ImportantToKnow';
 import SocialMediaList from './SocialMediaList';
-import { imageDataPokeCard } from '../../utils/imageData';
 import ProjectDetailDescriptionContainer from '../Project Detail Description Components/ProjectDetailDescriptionContainer';
+import { useDispatch, useSelector } from 'react-redux';
+import { previewActions } from '../../store/preview.slice';
 
 const ProfileInfoContainer = () => {
-  const [preview, setPreview] = useState(imageDataPokeCard());
+  // const [preview, setPreview] = useState(imageDataPokeCard());
+  const dispatch = useDispatch();
+  const preview = useSelector((state) => state.preview.previewData);
 
   const changePreview = (newPreview) => {
-    setPreview(newPreview);
+    dispatch(previewActions.changeView(newPreview));
   };
 
   // if (initializing) {

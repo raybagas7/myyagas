@@ -1,22 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { openingActions } from '../../store/opening.slice';
 import ProfileInfoContainer from '../Profile Info Components/ProfileInfoContainer';
 
 const MainOpening = () => {
-  const [lineShrink, setLineShrink] = useState(false);
-  const [circlePop, setCirclePop] = useState(false);
-  const [openGate, setOpenGate] = useState(false);
-  const [opening, setOpening] = useState(false);
+  const dispatch = useDispatch();
+  const lineShrink = useSelector((state) => state.opening.lineShrink);
+  const circlePop = useSelector((state) => state.opening.circlePop);
+  const openGate = useSelector((state) => state.opening.openGate);
+  const opening = useSelector((state) => state.opening.opening);
 
-  const toggleOpen = () => {
-    setCirclePop(true);
-    setLineShrink(true);
+  const handleToggleOpen = (e) => {
+    e.preventDefault();
+
+    dispatch(openingActions.toggleFirstOpen());
+
     setTimeout(() => {
-      setOpenGate(true);
+      dispatch(openingActions.toggleOpenGate());
     }, 1500);
+
     setTimeout(() => {
-      setOpening(true);
+      dispatch(openingActions.toggleOpening());
     }, 2500);
   };
+
   return (
     <div
       className={`h-screen min-h-screen relative bg-main-bg bg-cover
@@ -34,7 +41,7 @@ const MainOpening = () => {
         ${lineShrink ? 'animate-shrink_line rounded-l-full' : null}`}
             ></div>
             <div
-              onClick={toggleOpen}
+              onClick={handleToggleOpen}
               className={`circle-button flex justify-center items-center cursor-pointer bg-gradient-to-t from-[#751a13] to-[#eb1f24] shrink-0 rounded-full w-40 h-40
           hover:animate-bigger_bouncing
           max-lg:w-24 max-lg:h-24
