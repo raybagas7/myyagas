@@ -27,6 +27,7 @@ const imageDataPokeCard = () => {
             'nodemailer',
             'postgres',
             'hapi',
+            'jwt',
           ],
         },
         {
@@ -37,6 +38,7 @@ const imageDataPokeCard = () => {
             'tailwind',
             'reacticon',
             'fejavascript',
+            'redux',
           ],
         },
         {
