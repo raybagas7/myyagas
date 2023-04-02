@@ -11,6 +11,7 @@ const ProfileInfoContainer = () => {
   // const [preview, setPreview] = useState(imageDataPokeCard());
   const dispatch = useDispatch();
   const preview = useSelector((state) => state.preview.previewData);
+  const animate = useSelector((state) => state.preview.showAnimation);
 
   const changePreview = (newPreview) => {
     dispatch(previewActions.changeView(newPreview));
@@ -33,9 +34,9 @@ const ProfileInfoContainer = () => {
       max-sm:p-2 max-sm:animate-none max-sm:scale-100"
       >
         <div
-          className="w-full flex flex-col h-64 drop-shadow-md bg-white rounded-xl mb-3
+          className="w-full flex flex-col scale-0 animate-default_quantum animation-delay-600 h-64 drop-shadow-md bg-white rounded-xl mb-3
         max-lg:w-460
-        max-sm:w-full max-sm:h-60"
+        max-sm:w-full max-sm:h-60 max-sm:animate-none max-sm:scale-100"
         >
           <p
             className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
@@ -58,19 +59,19 @@ const ProfileInfoContainer = () => {
             </div>
           </div>
         </div>
-        <div></div>
+
         <p
-          className="p-2.5 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
+          className="p-2.5 scale-0 animate-default_quantum animation-delay-600 bg-purple-dark-fancy text-white rounded-t-xl text-center text-lg
         max-2xl:text-base
         max-lg:w-full max-lg:min-w-[460px]
-        max-sm:min-w-full"
+        max-sm:min-w-full max-sm:animate-none max-sm:scale-100"
         >
           My Project
         </p>
         <div
-          className="h-full flex flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl
+          className="h-full flex scale-0 animate-default_quantum animation-delay-600 flex-col w-full min-h-half-screen bg-white overflow-auto no-scrollbar rounded-b-xl
          max-lg:min-w-[460px]
-         max-sm:min-w-full"
+         max-sm:min-w-full max-sm:animate-none max-sm:scale-100"
         >
           <div
             className="p-3 flex-1
@@ -87,14 +88,16 @@ const ProfileInfoContainer = () => {
       >
         <div
           key={preview[0].id}
-          className="w-full h-[500px] bg-white/50 rounded-xl p-3
+          className={`w-full h-[500px] bg-white/50 rounded-xl p-3 ${
+            animate ? 'scale-0 animate-default_quantum animation-delay-600' : ''
+          } 
           max-lg:h-fit
-          max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100"
+          max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100`}
         >
           <ProjectDetailContainer preview={preview} />
         </div>
         <div
-          className="bg-white/50 flex-1 rounded-xl p-3
+          className="bg-white/50 flex-1 rounded-xl p-3 scale-0 animate-default_quantum animation-delay-600
         max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100"
         >
           <ProjectDetailDescriptionContainer
