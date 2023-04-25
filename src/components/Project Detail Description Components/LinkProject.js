@@ -22,68 +22,68 @@ const LinkProject = ({ weblink, youtube, gitbe, gitfe }) => {
         <FaGitAlt />
       </li> */}
         {weblink !== null ? (
-          <li
-            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-blue-500 cursor-pointer
+          <a
+            target="_blank"
+            title="Website"
+            rel="noopener noreferrer"
+            href={weblink}
+          >
+            <li
+              className="text-2xl w-fit h-fit p-2 rounded-full hover:text-blue-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300
       max-lg:p-1.5 max-lg:text-xl"
-          >
-            <a
-              target="_blank"
-              title="Website"
-              rel="noopener noreferrer"
-              href={weblink}
             >
               <FiLink2 />
-            </a>
-          </li>
+            </li>
+          </a>
         ) : null}
         {youtube !== null ? (
-          <li
-            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
+          <a
+            target="_blank"
+            title="Youtube"
+            rel="noopener noreferrer"
+            href={youtube}
+          >
+            <li
+              className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300
       max-lg:p-1.5 max-lg:text-xl"
-          >
-            <a
-              target="_blank"
-              title="Youtube"
-              rel="noopener noreferrer"
-              href={youtube}
             >
               <FaYoutube />
-            </a>
-          </li>
+            </li>
+          </a>
         ) : null}
         {gitbe !== null ? (
-          <li
-            className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
+          <a
+            target="_blank"
+            title="Github Backend"
+            rel="noopener noreferrer"
+            href={gitbe}
+          >
+            <li
+              className="text-2xl w-fit h-fit p-2 rounded-full hover:text-red-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300
       max-lg:p-1.5 max-lg:text-xl"
-          >
-            <a
-              target="_blank"
-              title="Github Backend"
-              rel="noopener noreferrer"
-              href={gitbe}
             >
               <FaGitAlt />
-            </a>
-          </li>
+            </li>
+          </a>
         ) : null}
         {gitfe !== null ? (
-          <li
-            className="text-2xl w-fit h-fit p-2 text-blue-500 rounded-full hover:text-red-500 cursor-pointer
+          <a
+            target="_blank"
+            title="Github FrontEnd"
+            rel="noopener noreferrer"
+            href={gitfe}
+          >
+            <li
+              className="text-2xl w-fit h-fit p-2 text-blue-500 rounded-full hover:text-red-500 cursor-pointer
       hover:bg-white hover:drop-shadow transition duration-300
       max-lg:p-1.5 max-lg:text-xl"
-          >
-            <a
-              target="_blank"
-              title="Github FrontEnd"
-              rel="noopener noreferrer"
-              href={gitfe}
             >
               <FaGitAlt />
-            </a>
-          </li>
+            </li>
+          </a>
         ) : null}
       </ul>
     </div>

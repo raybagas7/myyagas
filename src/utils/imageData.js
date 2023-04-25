@@ -6,7 +6,7 @@ const imageDataPokeCard = () => {
       imageUrl:
         'https://live.staticflickr.com/65535/52677504962_4ea3f192b1_b.jpg',
       link: 'https://www.pokemoncard.my.id',
-      youtube: null,
+      youtube: 'https://www.youtube.com/watch?v=YZHGy54gVZs',
       gitfe: 'https://github.com/raybagas7/IThinkMyPersonal',
       gitbe: 'https://github.com/raybagas7/poke-card',
       about: `<p class='indent-5'>Pokécard is a browser game that is not fully developed yet and will develop over time for fun. 
