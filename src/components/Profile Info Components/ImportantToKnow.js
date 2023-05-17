@@ -6,7 +6,7 @@ const ImportantToKnow = () => {
       className="p-3 pt-0 text-sm indent-4
     max-2xl:text-xs max-2xl:p-1"
     >
-      <p className="mb-2">Love to code</p>
+      <p className="mb-2">Software Developer</p>
       <p className="mb-2">
         Looking For a Job{' '}
         <span
