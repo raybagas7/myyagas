@@ -9,10 +9,13 @@ import {
   SiFirebase,
   SiJava,
   SiRedux,
+  SiDigitalocean,
+  SiVercel,
 } from 'react-icons/si';
 import { FaAws, FaNode } from 'react-icons/fa';
 import { FiGithub } from 'react-icons/fi';
 import { Icon } from '@iconify/react';
+import { BiDroplet } from 'react-icons/bi';
 import ReactIconSVG from './ReactIconSVG';
 
 const FrameworkIcon = ({ item }) => {
@@ -229,6 +232,40 @@ const FrameworkIcon = ({ item }) => {
         max-2xl:w-4 max-2xl:h-4
         max-lg:w-7 max-lg:h-7
         max-sm:w-5 max-sm:h-5"
+        />
+      ) : item === 'digitalocean' ? (
+        <SiDigitalocean
+          title={item}
+          className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#0081FF]
+        max-2xl:w-4 max-2xl:h-4
+        max-lg:w-7 max-lg:h-7
+        max-sm:w-5 max-sm:h-5"
+        />
+      ) : item === 'vercel' ? (
+        <SiVercel
+          title={item}
+          className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#444444]
+        max-2xl:w-4 max-2xl:h-4
+        max-lg:w-7 max-lg:h-7
+        max-sm:w-5 max-sm:h-5"
+        />
+      ) : item === 'droplet' ? (
+        <BiDroplet
+          title={item}
+          className="w-7 h-7 cursor-pointer transition duration-300 hover:text-[#0081FF]
+        max-2xl:w-4 max-2xl:h-4
+        max-lg:w-7 max-lg:h-7
+        max-sm:w-5 max-sm:h-5"
+        />
+      ) : item === 'cloudAMQP' ? (
+        <img
+          src="https://cdn.auth0.com/marketplace/catalog/content/assets/creators/cloudamqp/cloudamqp-avatar.png"
+          alt="nodemailer"
+          title={item}
+          className="w-auto h-7 cursor-pointer
+          max-2xl:w-4 max-2xl:h-4
+          max-lg:w-7 max-lg:h-7
+          max-sm:w-5 max-sm:h-5"
         />
       ) : (
         <p>{item}</p>

@@ -42,7 +42,13 @@ const imageDataPokeCard = () => {
           ],
         },
         {
-          others: ['aws', 'awsec2', 'awsamplify', 'awsrds', 'awsmq'],
+          others: [
+            'vercel',
+            'digitalocean',
+            'droplet',
+            'firebase',
+            'cloudAMQP',
+          ], //, 'awsec2', 'awsamplify', 'awsrds', 'awsmq'
         },
       ],
     },

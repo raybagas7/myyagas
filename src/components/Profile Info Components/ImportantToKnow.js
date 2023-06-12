@@ -30,7 +30,7 @@ const ImportantToKnow = () => {
         >
           <p>Web Development</p>
           <p>Full Stack Development</p>
-          <p>I love design and stuff like that</p>
+          <p>(NodeJs, ReactJs, NextJs)-JS/TS</p>
         </div>
       </div>
     </div>
