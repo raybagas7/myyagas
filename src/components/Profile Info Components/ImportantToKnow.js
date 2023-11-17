@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const ImportantToKnow = () => {
   return (
@@ -8,7 +8,7 @@ const ImportantToKnow = () => {
     >
       <p className="mb-2">Software Developer</p>
       <p className="mb-2">
-        Looking For a Job{' '}
+        Frontend Engineer{" "}
         <span
           className="text-xs cursor-pointer transition duration-1000 rounded-full pl-2 pr-2 bg-white text-white
                   hover:bg-black-steam
@@ -29,8 +29,8 @@ const ImportantToKnow = () => {
         max-2xl:text-xxs"
         >
           <p>Web Development</p>
-          <p>Full Stack Development</p>
-          <p>(NodeJs, ReactJs, NextJs)-JS/TS</p>
+          <p>Frontend Development - JS/TS</p>
+          <p>(NextJs, ReactJs, React Native)</p>
         </div>
       </div>
     </div>

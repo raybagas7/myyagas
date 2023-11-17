@@ -1,11 +1,11 @@
-import React from 'react';
-import ProjectDetailContainer from '../Project Detail Components/ProjectDetailContainer';
-import ProjectInfoContainer from '../Project Info Components/ProjectInfoContainer';
-import ImportantToKnow from './ImportantToKnow';
-import SocialMediaList from './SocialMediaList';
-import ProjectDetailDescriptionContainer from '../Project Detail Description Components/ProjectDetailDescriptionContainer';
-import { useDispatch, useSelector } from 'react-redux';
-import { previewActions } from '../../store/preview.slice';
+import React from "react";
+import ProjectDetailContainer from "../Project Detail Components/ProjectDetailContainer";
+import ProjectInfoContainer from "../Project Info Components/ProjectInfoContainer";
+import ImportantToKnow from "./ImportantToKnow";
+import SocialMediaList from "./SocialMediaList";
+import ProjectDetailDescriptionContainer from "../Project Detail Description Components/ProjectDetailDescriptionContainer";
+import { useDispatch, useSelector } from "react-redux";
+import { previewActions } from "../../store/preview.slice";
 
 const ProfileInfoContainer = () => {
   // const [preview, setPreview] = useState(imageDataPokeCard());
@@ -23,7 +23,7 @@ const ProfileInfoContainer = () => {
 
   return (
     <div
-      className="w-full h-full animate-default_quantum bg-purple-light-fancy/30 rounded-xl gap-3 flex backdrop-blur p-5
+      className="w-full h-full animate-default_quantum bg-purple-light-fancy/50 rounded-xl gap-3 flex backdrop-blur p-5
     max-lg:flex-col max-lg:overflow-auto
     max-sm:p-2"
     >
@@ -89,7 +89,7 @@ const ProfileInfoContainer = () => {
         <div
           key={preview[0].id}
           className={`w-full h-[500px] bg-white/50 rounded-xl p-3 ${
-            animate ? 'scale-0 animate-default_quantum animation-delay-600' : ''
+            animate ? "scale-0 animate-default_quantum animation-delay-600" : ""
           } 
           max-lg:h-fit
           max-sm:p-0 max-sm:bg-transparent max-sm:animate-none max-sm:scale-100`}

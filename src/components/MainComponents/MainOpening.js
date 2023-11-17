@@ -1,7 +1,7 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { openingActions } from '../../store/opening.slice';
-import ProfileInfoContainer from '../Profile Info Components/ProfileInfoContainer';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { openingActions } from "../../store/opening.slice";
+import ProfileInfoContainer from "../Profile Info Components/ProfileInfoContainer";
 
 const MainOpening = () => {
   const dispatch = useDispatch();
@@ -26,9 +26,9 @@ const MainOpening = () => {
 
   return (
     <div
-      className={`h-screen min-h-screen relative bg-main-bg bg-cover
+      className={`h-screen min-h-screen relative  bg-gradient-to-b from-purple-fancy via-purple-500 to-pink-500
       max-lg:h-fit
-    ${opening ? 'p-5 max-sm:p-2' : null}`}
+    ${opening ? "p-5 max-sm:p-2" : null}`}
     >
       {opening ? (
         <ProfileInfoContainer />
@@ -38,7 +38,7 @@ const MainOpening = () => {
             <div
               className={`w-full h-3 bg-gold-fancy origin-right
               max-lg:h-2
-        ${lineShrink ? 'animate-shrink_line rounded-l-full' : null}`}
+        ${lineShrink ? "animate-shrink_line rounded-l-full" : null}`}
             ></div>
             <div
               onClick={handleToggleOpen}
@@ -47,8 +47,8 @@ const MainOpening = () => {
           max-lg:w-24 max-lg:h-24
         ${
           circlePop
-            ? 'animate-fade_out_quantum_bouncing hover:animate-fade_out_quantum_bouncing animation-delay-200 hover:animation-delay-200'
-            : 'animate-default_quantum_bouncing'
+            ? "animate-fade_out_quantum_bouncing hover:animate-fade_out_quantum_bouncing animation-delay-200 hover:animation-delay-200"
+            : "animate-default_quantum_bouncing"
         }`}
             >
               <img
@@ -61,16 +61,16 @@ const MainOpening = () => {
             <div
               className={`w-full h-3 bg-gold-fancy origin-left
               max-lg:h-2
-        ${lineShrink ? 'animate-shrink_line rounded-r-full' : null}`}
+        ${lineShrink ? "animate-shrink_line rounded-r-full" : null}`}
             ></div>
           </div>
           <div
             className={`bg-gradient-to-b from-purple-dark-fancy to-[#712cca] h-half-screen origin-top
-      ${openGate ? 'animate-rolled_div' : null}`}
+      ${openGate ? "animate-rolled_div" : null}`}
           ></div>
           <div
             className={`bg-gradient-to-t from-purple-dark-fancy to-[#712cca] h-half-screen origin-bottom
-      ${openGate ? 'animate-rolled_div' : null}`}
+      ${openGate ? "animate-rolled_div" : null}`}
           ></div>
         </>
       )}
